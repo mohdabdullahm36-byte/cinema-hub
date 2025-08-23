@@ -13,15 +13,15 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6165486744:AAFW3C6588558QbLWfRD_-ddGAWAfY')
+API_ID = int(environ.get('API_ID', '25208218'))
+API_HASH = environ.get('API_HASH', 'cc8e841203c92f077015b865f44a8663')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8463590894:AAEVunbJfjqrj2FwKEU1KTdx_Dl91e6kKZs')
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5397984467').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1395730131 6525645241').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/biisal")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-10019494867581'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001234567898').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002707946666'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/cinemahub756')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002665284208').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mohdabdullahm36:<kaif1344>@cluster0.igeelec.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
